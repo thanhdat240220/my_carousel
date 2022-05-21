@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      * {
+        box-sizing: inherit;
+      }
+      .main {
+        min-height: 100vh;
+      }
+      .carousel {
+        padding: 20px;
+        background-color: gray;
+        height: 220px;
+      }
+      .carousel-wrapper {
+        height: 100%;
+        overflow: hidden;
+        user-select: none;
+        padding: 20px 0;
+      }
+      .carousel-viewport {
+        display: flex;
+        height: 100%;
+      }
+      .carousel-item {
+        height: 100%;
+      }
+      .carousel-item > div {
+        background-color: aqua;
+        border-left: 1px solid;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="carousel" id="fake-carousel">
+        <div class="">1</div>
+        <div class="">2</div>
+        <div class="">3</div>
+        <div class="">4</div>
+      </div>
+      <button class="previous">Previous</button>
+      <button class="next">Next</button>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

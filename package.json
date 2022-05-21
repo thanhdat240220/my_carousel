@@ -1,0 +1,26 @@
+{
+  "name": "carousel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:watch": "rollup --config rollup.config.js --watch",
+    "start": "rollup --config rollup.config.js && http-server ./ -o -p 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhdat240220/my_carousel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanhdat240220/my_carousel/issues"
+  },
+  "homepage": "https://github.com/thanhdat240220/my_carousel#readme",
+  "devDependencies": {
+    "@rollup/plugin-babel": "^5.3.1",
+    "http-server": "^14.1.0",
+    "rollup": "^2.74.1"
+  }
+}
